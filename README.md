@@ -16,7 +16,7 @@
 ---
 ## TODO 
 
-- [ ] Provide environment configuration files, including `requirements.txt` and Conda environment settings
+- [ ] Provide environment configuration files, including `requirements.txt`
 - [ ] Provide Dockerfile and containerized running instructions
 - [ ] Release pretrained model weights and runtime assets
 - [ ] Release testing and evaluation scripts
