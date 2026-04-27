@@ -38,3 +38,20 @@ Before the official release, **please do not email us to request the Code**, as 
 Thank you for your understanding and support.
 
 ---
+
+## Reference
+If you use CAMeL in your research, please cite it by the following BibTeX entry:
+
+```bibtex
+
+@article{wen2026fanet,
+  title={FANet: Fovea Attention Network for Robust Aerial Geo-localization Across Diverse Weather Conditions},
+  author={Wen, Jiahao and Yu, Hang and Zheng, Zhedong},
+  journal={IEEE Transactions on Image Processing},
+  year={2026},
+  publisher={IEEE}
+}
+
+
+
+```
