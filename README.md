@@ -40,7 +40,7 @@ Thank you for your understanding and support.
 ---
 
 ## Reference
-If you use CAMeL in your research, please cite it by the following BibTeX entry:
+If you use FANet in your research, please cite it by the following BibTeX entry:
 
 ```bibtex
 
