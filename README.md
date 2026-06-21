@@ -3,7 +3,7 @@
 
 **Code Release**: We plan to fully release the PyTorch implementation of FANet, including training and evaluation code, around **June 2026**.
 
-
+**Memory**: For training, we recommend using a GPU with at least 24 GB of memory. Our experiments were conducted on an NVIDIA RTX A6000 GPU.
 ---
 
 
