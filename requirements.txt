@@ -1,0 +1,18 @@
+# Recommended conda environment name: FANET
+--extra-index-url https://download.pytorch.org/whl/cu117
+
+torch==1.13.0+cu117
+torchvision==0.14.0+cu117
+numpy==1.24.4
+scipy==1.10.1
+Pillow==10.2.0
+PyYAML==6.0.1
+imgaug==0.4.0
+matplotlib==3.7.5
+tensorboard==2.14.0
+imageio==2.33.1
+opencv-python==4.9.0.80
+scikit-image==0.21.0
+tqdm==4.66.1
+pandas==2.0.3
+seaborn==0.13.1
