@@ -10,8 +10,8 @@
 
 ## News
 
-- **[2026-04-24]** Paper Accept.
-- **[2026-06-21]** The Dockerfile is now available.
+- **[2026-04-24]** Paper Accepted.
+- **[2026-06-21]** The Dockerfile(#docker) is now available.
 - **[Coming Soon]** The code will be released around June 2026 (CKPT,...).
 
 ---
