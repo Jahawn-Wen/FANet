@@ -11,13 +11,14 @@
 ## News
 
 - **[2026-04-24]** Paper Accept.
+- **[2026-06-21]** The Dockerfile is now available.
 - **[Coming Soon]** The code will be released around June 2026 (CKPT,...).
 
 ---
 ## TODO 
 
 - [x] Provide environment configuration files, including `requirements.txt`
-- [ ] Provide Dockerfile and containerized running instructions
+- [x] Provide Dockerfile and containerized running instructions
 - [ ] Release pretrained model weights and runtime assets
 - [ ] Release testing and evaluation scripts
 - [ ] Release training scripts
@@ -36,6 +37,60 @@ We plan to release the **complete training and testing code** by **June**, toget
 Before the official release, **please do not email us to request the Code**, as we may not be able to respond to such requests individually.
 
 Thank you for your understanding and support.
+
+---
+## Docker
+
+Two Docker images are available on GitHub Container Registry:
+
+- `ghcr.io/jahawn-wen/fanet:train`: training image.
+- `ghcr.io/jahawn-wen/fanet:best`: evaluation image with the best checkpoint.
+
+### Training
+
+```bash
+docker pull ghcr.io/jahawn-wen/fanet:train
+
+docker run --gpus '"device=0"' --ipc=host -it --rm \
+  -e GPU_IDS=0 \
+  -e FANET_RUN_NAME=fanet_train \
+  -v /absolute/path/to/University-Release/train:/data/train:ro \
+  -v /absolute/path/to/fanet_outputs:/outputs \
+  ghcr.io/jahawn-wen/fanet:train \
+  train-fanet
+```
+
+Training outputs are saved under:
+
+```text
+/outputs/model/<FANET_RUN_NAME>/
+/outputs/log/<FANET_RUN_NAME>/
+```
+
+### Evaluation
+
+```bash
+docker pull ghcr.io/jahawn-wen/fanet:best
+
+docker run --gpus all --ipc=host -it --rm \
+  -v /absolute/path/to/University-Release/test:/data/test:ro \
+  ghcr.io/jahawn-wen/fanet:best \
+  python test_iaa_all.py \
+    --name best_ckpt \
+    --test_dir /data/test \
+    --batchsize 128 \
+    --gpu_ids 0 \
+    --iaa \
+    --weather dark \
+    --modes d2s
+```
+
+
+### Notes
+
+- The dataset is not included in the images.
+- NVIDIA Container Toolkit is required for GPU support.
+
 
 ---
 
