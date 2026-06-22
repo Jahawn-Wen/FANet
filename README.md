@@ -253,10 +253,6 @@ If you use FANet in your research, please cite it by the following BibTeX entry:
   year={2026},
   publisher={IEEE}
 }
-
-
-
-
 ```
 
 ## ✨ Acknowledgement
