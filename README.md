@@ -45,6 +45,17 @@ Thank you for your understanding and support.
 
 ---
 
+## Installation
+
+Create a Python environment and install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+
 ## Organize dataset folder as follows:
 
 ```
@@ -79,6 +90,81 @@ Thank you for your understanding and support.
 
 
 ---
+
+## Training
+
+Before training, place the required pretrained files:
+
+```text
+resnet50-0676ba61.pth
+resnet50_ibn_a-d9d0bb7b.pth
+segment/segment_anything/
+segment/checkpoint/sam_vit_h_4b8939.pth
+```
+
+Run:
+
+```bash
+python train.py \
+  --name fanet_best_reproduce \
+  --experiment_name fanet_best_reproduce \
+  --data_dir /path/to/University-Release/train \
+  --views=3 \
+  --droprate=0.5 \
+  --extra_Google \
+  --share \
+  --stride=1 \
+  --h=256 \
+  --w=256 \
+  --lr=0.005 \
+  --gpu_ids=0 \
+  --norm=spade \
+  --iaa \
+  --focal \
+  --multi_weather \
+  --btnk 0 1 1 0 0 0 0 \
+  --conv_norm=none \
+  --reptile \
+  --adain=a \
+  --seed=1
+```
+
+Training outputs are written to:
+
+```text
+model/fanet_best_reproduce/
+log/fanet_best_reproduce/
+```
+
+## Evaluation
+
+Before evaluation, place the final checkpoint at:
+
+```text
+model/best_ckpt/net_best.pth
+```
+
+Run dark-weather D2S evaluation:
+
+```bash
+python test_iaa_all.py \
+  --name best_ckpt \
+  --test_dir /path/to/University-Release/test \
+  --batchsize 128 \
+  --gpu_ids 0 \
+  --iaa \
+  --weather dark \
+  --modes d2s
+```
+
+## Notes
+
+- Source code is released without datasets or large checkpoint files.
+- Use the paths above as examples and replace them with local dataset locations.
+
+---
+
+
 
 ## Docker
 
@@ -127,7 +213,7 @@ docker run --gpus all --ipc=host -it --rm \
 ```
 
 
-### Notes
+### Docker Notes
 
 - The dataset is not included in the images.
 - NVIDIA Container Toolkit is required for GPU support.
