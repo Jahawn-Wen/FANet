@@ -1,6 +1,7 @@
 # FANet
 [IEEE Transactions on Image Processing'26] Pytorch implementation of FANet: Fovea Attention Network for Robust Aerial Geo-localization Across Diverse Weather Conditions.
 
+**FANet** is a **fovea-inspired, all-weather, image-only cross-view geo-localization framework** for robust matching between drone-view and satellite-view images. The core idea is to decouple **global weather robustness** and **local geometric–semantic discriminability**, enabling the model to resist appearance shifts, occlusions, texture degradation, and cross-view misalignments caused by dark, over-exposure, rain, snow, fog, and motion blur.
 **More details can be found at our paper: [FANet: Fovea Attention Network for Robust Aerial Geo-localization Across Diverse Weather Conditions](https://www.zdzheng.xyz/files/2026/TIP_FANet.pdf)**
 
 <div align="center"><img src="assets/fig1.jpg" width="800"></div>
@@ -15,7 +16,7 @@
 - **[2026-04-24]** Paper Accepted.
 - **[2026-06-21]** The [Dockerfile](#docker) is now available.
 - **[2026-06-22]** The checkpoints have been released at [Baidu Yun](https://pan.baidu.com/s/1CIbpjns73TEY572ofyXxCg?pwd=qh43)[qh43]！
-- **[2026-06-22]** The code is now available.
+- **[2026-06-22]** The code is now available. Welcome to communicate！
 
 ---
 ## TODO 
@@ -27,12 +28,6 @@
 - [x] Release training scripts
 - [x] Provide dataset preparation instructions and preprocessing scripts
 - [x] Provide complete reproduction instructions for the main experimental results
-
----
-
-## Important Note
-
-Our code is now available. Welcome to communicate！
 
 ---
 
@@ -112,7 +107,16 @@ segment/segment_anything/
 segment/checkpoint/sam_vit_h_4b8939.pth
 ```
 
-Run:
+Run with the provided script:
+
+```bash
+DATA_DIR=/path/to/University-Release/train \
+GPU_IDS=0 \
+FANET_RUN_NAME=fanet_best_reproduce \
+bash scripts/train_fanet.sh
+```
+
+The script is equivalent to:
 
 ```bash
 python train.py \
@@ -154,7 +158,15 @@ Before evaluation, place the final checkpoint at:
 model/best_ckpt/net_best.pth
 ```
 
-Run dark-weather D2S evaluation:
+Run dark-weather D2S evaluation with the provided script:
+
+```bash
+TEST_DIR=/path/to/University-Release/test \
+GPU_IDS=0 \
+bash scripts/test_fanet_dark.sh
+```
+
+The script is equivalent to:
 
 ```bash
 python test_iaa_all.py \
@@ -166,7 +178,6 @@ python test_iaa_all.py \
   --weather dark \
   --modes d2s
 ```
-
 ## Notes
 
 - Source code is released without datasets or large checkpoint files.
