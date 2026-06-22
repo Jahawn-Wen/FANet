@@ -96,7 +96,6 @@ docker run --gpus all --ipc=host -it --rm \
 - The dataset is not included in the images.
 - NVIDIA Container Toolkit is required for GPU support.
 
-
 ---
 
 ## Reference
@@ -114,4 +113,9 @@ If you use FANet in your research, please cite it by the following BibTeX entry:
 
 
 
+
 ```
+
+## ✨ Acknowledgement
+- Our code is based on [MuseNet](https://github.com/wtyhub/MuseNet/tree/master)
+- [segment-anything](https://github.com/facebookresearch/segment-anything): Thanks a lot for the foundamental efforts!
