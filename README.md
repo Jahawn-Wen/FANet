@@ -11,12 +11,11 @@
 
 ---
 
-
 ## News
 
 - **[2026-04-24]** Paper Accepted.
 - **[2026-06-21]** The [Dockerfile](#docker) is now available.
-- **[2026-06-22]** The checkpoints have been released at [Baidu Yun](https://pan.baidu.com/s/1RZRISYYO0NYzuE94DNrd7g?pwd=c7r8)[c7r8]！
+- **[2026-06-22]** The checkpoints have been released at [Baidu Yun](https://pan.baidu.com/s/1CIbpjns73TEY572ofyXxCg?pwd=qh43)[qh43]！
 - **[Coming Soon]** The code will be released around June 2026.
 
 ---
@@ -91,7 +90,7 @@ pip install -r requirements.txt
 
 ## Models and Weights
 *  The **Models** and **Weights** are released.
-* Download The Trained Model Weights:[Baidu Yun](https://pan.baidu.com/s/1RZRISYYO0NYzuE94DNrd7g?pwd=c7r8)[c7r8].
+* Download The Trained Model Weights:[Baidu Yun](https://pan.baidu.com/s/1CIbpjns73TEY572ofyXxCg?pwd=qh43)[qh43].
 
 Organize `SAM` folder as follows:
 
