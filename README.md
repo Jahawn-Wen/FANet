@@ -12,19 +12,19 @@
 ---
 
 
-
 ## News
 
 - **[2026-04-24]** Paper Accepted.
 - **[2026-06-21]** The [Dockerfile](#docker) is now available.
-- **[Coming Soon]** The code will be released around June 2026 (CKPT,...).
+- **[2026-06-22]** The checkpoints have been released at [Baidu Yun](https://pan.baidu.com/s/1RZRISYYO0NYzuE94DNrd7g?pwd=c7r8)[c7r8]！
+- **[Coming Soon]** The code will be released around June 2026.
 
 ---
 ## TODO 
 
 - [x] Provide environment configuration files, including `requirements.txt`
 - [x] Provide Dockerfile and containerized running instructions
-- [ ] Release pretrained model weights and runtime assets
+- [x] Release pretrained model weights and runtime assets
 - [ ] Release testing and evaluation scripts
 - [ ] Release training scripts
 - [ ] Provide dataset preparation instructions and preprocessing scripts
