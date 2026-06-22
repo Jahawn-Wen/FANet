@@ -44,6 +44,42 @@ Before the official release, **please do not email us to request the Code**, as 
 Thank you for your understanding and support.
 
 ---
+
+## Organize dataset folder as follows:
+
+```
+|-- dataset/
+|    |-- University-Release/
+|        |-- test/
+|            |-- query_drone/
+|            |-- query_satellite/
+|            |-- ...
+|        |-- train/
+|            |-- drone/
+|            |-- satellite/
+|            |-- ...
+|    |-- SUES/
+|        |-- Training/
+|            |-- 150/
+|            |-- 200/
+|            |-- ...
+|        |-- Testing/
+|            |-- 150/
+|            |-- 200/
+|            |-- ...
+|    |-- CVUSA/
+|        |-- train/
+|            |-- satellite/
+|            |-- street/
+|        |-- val/
+|            |-- satellite/
+|            |-- street/
+```
+
+
+
+---
+
 ## Docker
 
 Two Docker images are available on GitHub Container Registry:
