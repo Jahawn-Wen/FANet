@@ -87,6 +87,25 @@ pip install -r requirements.txt
 |            |-- street/
 ```
 
+---
+
+## Models and Weights
+*  The **Models** and **Weights** are released.
+* Download The Trained Model Weights:[Baidu Yun](https://pan.baidu.com/s/1RZRISYYO0NYzuE94DNrd7g?pwd=c7r8)[c7r8].
+
+Organize `SAM` folder as follows:
+
+```
+|-- segment/
+|    |-- checkpoint/
+|        |-- sam_vit_h_4b8939.pth
+|    |-- segment_anything/
+|    |-- ...
+|-- image_folder.py/
+|-- model.py/
+|-- ...
+```
+
 
 
 ---
