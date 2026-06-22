@@ -1,5 +1,9 @@
 # FANet
-[IEEE Transactions on Image Processing'26] Pytorch implementation of FANet: Fovea Attention Network for Robust Aerial Geo-localization Across Diverse Weather Conditions
+[IEEE Transactions on Image Processing'26] Pytorch implementation of FANet: Fovea Attention Network for Robust Aerial Geo-localization Across Diverse Weather Conditions.
+
+**More details can be found at our paper: [FANet: Fovea Attention Network for Robust Aerial Geo-localization Across Diverse Weather Conditions](https://www.zdzheng.xyz/files/2026/TIP_FANet.pdf)**
+
+<div align="center"><img src="assets/fig1.jpg" width="800"></div>
 
 **Code Release**: We plan to fully release the PyTorch implementation of FANet, including training and evaluation code, around **June 2026**.
 
