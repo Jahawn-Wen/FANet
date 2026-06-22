@@ -5,7 +5,6 @@
 
 <div align="center"><img src="assets/fig1.jpg" width="800"></div>
 
-**Code Release**: We plan to fully release the PyTorch implementation of FANet, including training and evaluation code, around **June 2026**.
 
 **CUDA Memory**: We recommend using a GPU with at least **24 GB** of memory. Our experiments were conducted on an **NVIDIA RTX A6000** GPU.
 
@@ -16,7 +15,7 @@
 - **[2026-04-24]** Paper Accepted.
 - **[2026-06-21]** The [Dockerfile](#docker) is now available.
 - **[2026-06-22]** The checkpoints have been released at [Baidu Yun](https://pan.baidu.com/s/1CIbpjns73TEY572ofyXxCg?pwd=qh43)[qh43]！
-- **[Coming Soon]** The code will be released around June 2026.
+- **[2026-06-22]** The code is now available.
 
 ---
 ## TODO 
@@ -24,23 +23,16 @@
 - [x] Provide environment configuration files, including `requirements.txt`
 - [x] Provide Dockerfile and containerized running instructions
 - [x] Release pretrained model weights and runtime assets
-- [ ] Release testing and evaluation scripts
-- [ ] Release training scripts
-- [ ] Provide dataset preparation instructions and preprocessing scripts
-- [ ] Provide complete reproduction instructions for the main experimental results
+- [x] Release testing and evaluation scripts
+- [x] Release training scripts
+- [x] Provide dataset preparation instructions and preprocessing scripts
+- [x] Provide complete reproduction instructions for the main experimental results
 
 ---
 
 ## Important Note
 
-We are currently occupied with several ongoing research and project commitments.
-Therefore, the related code and resources are still being organized and are not ready for full public release at this stage.
-
-We plan to release the **complete training and testing code** by **June**, together with pretrained weights, environment configuration files, and Docker support.
-
-Before the official release, **please do not email us to request the Code**, as we may not be able to respond to such requests individually.
-
-Thank you for your understanding and support.
+Our code is now available. Welcome to communicate！
 
 ---
 
